@@ -14,7 +14,7 @@ function watchify (b, opts) {
     var pkgcache = b._options.packageCache;
     var changingDeps = {};
     var pending = false;
-    var delay = typeof opts.delay === 'number' ? opts.delay : 600;
+    var delay = typeof opts.delay === 'number' ? opts.delay : 0;
     var chokidarOpts = {
         persistent: true,
         usePolling: opts.poll
